@@ -1,12 +1,12 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 :root {
     --primary-color: #2e8b57; /* Cor verde principal */
     --secondary-color: #ffffff; /* Cor branca */
     --accent-color: #ffcc00; /* Cor de destaque (amarelo claro) */
     --bg-color: #f0f4f3; /* Fundo suave */
-    --font-family: 'Nunito Sans', sans-serif;
+    --font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -25,7 +25,7 @@ header {
     padding: 1rem 2rem;
 }
 
-h1 {
+.logo h1 {
     margin: 0;
     font-size: 1.8rem;
     font-weight: 600;
@@ -57,8 +57,20 @@ main {
     padding-bottom: 8rem; /* Adicionado para evitar sobreposição com o footer */
 }
 
-.graficos-section {
+.intro {
     text-align: center;
+    margin-bottom: 3rem;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: var(--primary-color);
 }
 
 .graficos-container {
@@ -69,10 +81,16 @@ main {
     margin-bottom: 5rem; /* Margem inferior para o container de gráficos */
 }
 
-.grafico {
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem 0;
+    position: relative; /* Alterado para manter o footer no fluxo do documento */
+    bottom: 0;
     width: 100%;
-    max-width: 800px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20
+}
+
+footer p {
+    margin: 0;
+}
